@@ -11,6 +11,8 @@ const questions = [
 // this below funct ask is for asking all the questions
 
 const ask = (i = 0) => {
+    if(i === 0) console.log('this part is running');
+    
     console.log('process.stdout.write() ====>>> ',  process.stdout.write(`\n\n ${questions[i]}`)); //process.stdout.write() ==>> it returns true if something inside the () else error
     
     process.stdout.write(`\n\n ${questions[i]}`);
